@@ -5,6 +5,7 @@
 // import UserInfo from "@/components/UserInfo";
 
 import Counter from "@/components/Counter";
+import From from "@/components/From";
 
 const HomePage = () => {
   return (
@@ -32,6 +33,7 @@ const HomePage = () => {
       /> */}
 
       <Counter/>
+      <From/>
     </section>
   );
 };
