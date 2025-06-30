@@ -1,8 +1,12 @@
 // "use client";
 // use client use for ElementWrapper
 
-import Button from "@/components/Button";
-import { primaryButtonProps, secondaryButtonProps } from "@/components/Button";
+import UseReducer from "@/components/UseReducer";
+
+
+
+// import Button from "@/components/Button";
+// import { primaryButtonProps, secondaryButtonProps } from "@/components/Button";
 
 
 // import AdminInfo from "@/components/AdminInfo";
@@ -50,9 +54,10 @@ const HomePage = () => {
         Click Here
       </ElementWrapper> */}
 
-      <Button {...primaryButtonProps} />
-      <Button {...secondaryButtonProps} />
+      {/* <Button {...primaryButtonProps} />
+      <Button {...secondaryButtonProps} /> */}
 
+     <UseReducer/>
 
     </section>
   );
