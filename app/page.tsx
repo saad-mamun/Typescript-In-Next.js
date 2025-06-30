@@ -1,14 +1,16 @@
-import AdminInfo from "@/components/AdminInfo";
-import MyFC from "@/components/FC";
-import MyChildren from "@/components/MyChildren";
-import User from "@/components/User";
-import UserInfo from "@/components/UserInfo";
+// import AdminInfo from "@/components/AdminInfo";
+// import MyFC from "@/components/FC";
+// import MyChildren from "@/components/MyChildren";
+// import User from "@/components/User";
+// import UserInfo from "@/components/UserInfo";
+
+import Counter from "@/components/Counter";
 
 const HomePage = () => {
   return (
     <section className="p-3">
       <h1>Hello this is home page</h1>
-      <User name="Liton" age={20} />
+      {/* <User name="Liton" age={20} />
       <MyChildren>
         <p>This is a Children</p>
       </MyChildren>
@@ -27,7 +29,9 @@ const HomePage = () => {
         location={["Mars", "UnKnown"]}
         admin="Yes"
         employer="Yes"
-      />
+      /> */}
+
+      <Counter/>
     </section>
   );
 };

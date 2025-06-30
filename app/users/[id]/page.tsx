@@ -1,7 +1,4 @@
 
-
-
-
 type UserShape = {
     params:{
          id: number
