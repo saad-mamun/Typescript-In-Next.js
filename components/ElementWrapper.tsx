@@ -17,7 +17,6 @@ const ElementWrapper: FC<ElementWrapperProps> = ({
 
  const Element = elementType as keyof JSX.IntrinsicElements
 
-
   return <Element classname={classname} onClick={onClick} >
     {children}
   </Element>;

@@ -1,5 +1,9 @@
-"use client";
+// "use client";
 // use client use for ElementWrapper
+
+import Button from "@/components/Button";
+import { primaryButtonProps, secondaryButtonProps } from "@/components/Button";
+
 
 // import AdminInfo from "@/components/AdminInfo";
 // import MyFC from "@/components/FC";
@@ -8,7 +12,7 @@
 // import UserInfo from "@/components/UserInfo";
 // import Counter from "@/components/Counter";
 // import From from "@/components/From";
-import ElementWrapper from "@/components/ElementWrapper";
+// import ElementWrapper from "@/components/ElementWrapper";
 
 const HomePage = () => {
   return (
@@ -39,12 +43,17 @@ const HomePage = () => {
       <From/> */}
 
       {/* Element Wrapper page */}
-      <ElementWrapper elementType="div" classname="box">
+      {/* <ElementWrapper elementType="div" classname="box">
         <p>THIS IS A DIV ELEMENT WITH A NAME OF BOX</p>
       </ElementWrapper>
       <ElementWrapper elementType="button" onClick={() => alert("Button called")}>
         Click Here
-      </ElementWrapper>
+      </ElementWrapper> */}
+
+      <Button {...primaryButtonProps} />
+      <Button {...secondaryButtonProps} />
+
+
     </section>
   );
 };
