@@ -1,11 +1,14 @@
+"use client";
+// use client use for ElementWrapper
+
 // import AdminInfo from "@/components/AdminInfo";
 // import MyFC from "@/components/FC";
 // import MyChildren from "@/components/MyChildren";
 // import User from "@/components/User";
 // import UserInfo from "@/components/UserInfo";
-
-import Counter from "@/components/Counter";
-import From from "@/components/From";
+// import Counter from "@/components/Counter";
+// import From from "@/components/From";
+import ElementWrapper from "@/components/ElementWrapper";
 
 const HomePage = () => {
   return (
@@ -32,8 +35,16 @@ const HomePage = () => {
         employer="Yes"
       /> */}
 
-      <Counter/>
-      <From/>
+      {/* <Counter/>
+      <From/> */}
+
+      {/* Element Wrapper page */}
+      <ElementWrapper elementType="div" classname="box">
+        <p>THIS IS A DIV ELEMENT WITH A NAME OF BOX</p>
+      </ElementWrapper>
+      <ElementWrapper elementType="button" onClick={() => alert("Button called")}>
+        Click Here
+      </ElementWrapper>
     </section>
   );
 };
