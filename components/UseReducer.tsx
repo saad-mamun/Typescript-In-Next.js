@@ -1,14 +1,12 @@
 "use client"
-
 import { useReducer } from "react";
 
 type State = {
   count: number;
 };
+type Action = { type: "INCREMENT" } | { type: "DECREMENT" };
 
-type Aciton = { type: "INCREMENT" } | { type: "DECREMENT" };
-
-const reducer = (state: State, action: Aciton): State => {
+const reducer = (state: State, action: Action): State => {
   switch (action.type) {
     case "INCREMENT":
       return { count: state.count + 1 };
@@ -37,5 +35,4 @@ const UseReducer = () => {
     </div>
   );
 };
-
 export default UseReducer;

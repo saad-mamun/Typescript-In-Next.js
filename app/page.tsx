@@ -2,6 +2,7 @@
 // use client use for ElementWrapper
 
 import UseReducer from "@/components/UseReducer";
+import UseEffect from "@/components/UseEffect";
 
 
 
@@ -58,6 +59,7 @@ const HomePage = () => {
       <Button {...secondaryButtonProps} /> */}
 
      <UseReducer/>
+     <UseEffect/>
 
     </section>
   );
